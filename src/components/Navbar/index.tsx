@@ -4,7 +4,7 @@ import HeaderImage from '../../assets/images/headerLogo.png';
 
 export default function Navbar() {
     return (
-        <div className="p-1 px-6 flex items-center justify-between bg-white shadow-lg">
+        <div className="p-0 px-6 flex items-center justify-between bg-white shadow-lg">
             <div>
                 <Link href={'#'}>
                     <Image className="inline-block" height={70} quality={100} alt="Abdul Rehman - Software Engineer" src={HeaderImage} />
