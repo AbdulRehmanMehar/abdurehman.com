@@ -16,18 +16,22 @@ export default function Navbar() {
           />
         </Link>
         <ul className="mx-4 border-l-2 px-6 inline-block">
-          <Link
-            className="mx-3 opacity-75 text-sm border-b-2 border-transparent duration-500 hover:border-red-300 hover:opacity-100"
-            href="#"
-          >
-            Home
-          </Link>
-          <Link
-            className="mx-3 opacity-75 text-sm border-b-2 border-transparent duration-500 hover:border-red-300 hover:opacity-100"
-            href="#"
-          >
-            About Me
-          </Link>
+          <li>
+            <Link
+              className="mx-3 opacity-75 text-sm border-b-2 border-transparent duration-500 hover:border-red-300 hover:opacity-100"
+              href="#"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="mx-3 opacity-75 text-sm border-b-2 border-transparent duration-500 hover:border-red-300 hover:opacity-100"
+              href="#"
+            >
+              About Me
+            </Link>
+          </li>
         </ul>
       </div>
       <div>Contact</div>
