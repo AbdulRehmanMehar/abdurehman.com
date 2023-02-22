@@ -10,7 +10,7 @@ module.exports = {
         "primary-dark": "#8b2a10",
       },
       screens: {
-        sm: { min: "260px", max: "767px" },
+        sm: { min: "100px", max: "767px" },
         // => @media (min-width: 640px and max-width: 767px) { ... }
 
         md: { min: "768px", max: "1023px" },
