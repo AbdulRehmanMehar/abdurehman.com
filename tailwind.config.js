@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         ...require("tailwindcss/colors"),
         primary: "#e05751",
+        secondary: "#ef852b",
       },
     },
   },

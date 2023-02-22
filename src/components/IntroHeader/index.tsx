@@ -2,6 +2,8 @@ import Image from "next/image";
 import ForegroundImage from "../../assets/images/myself_bg.png";
 import WaterMark from "../../assets/images/watermark.png";
 import LeftSide from "../../assets/images/graph.png";
+import Link from "next/link";
+import ChangingLetters from "../Typography/ChangingLetters";
 
 export default function IntroHeader() {
   return (
@@ -25,13 +27,30 @@ export default function IntroHeader() {
       <div className="mx-20">
         <div className="flex justify-center flex-col min-h-[500px] mx-28">
           <div className="lg:w-1/3 md:w-1/3">
-            <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
-            <h2 className="block text-2xl mb-4 font-bold text-primary">
-              Full Stack Developer
-            </h2>
-            <p className="ml-1 text-sm opacity-60">
+            <p className="ml-1 text-sm block">Hello! I am Abdul Rehman, a</p>
+            <h1 className="block text-2xl font-bold text-primary">
+              <ChangingLetters>
+                <span title="Developing scalable softwares for years.">
+                  Software Engineer
+                </span>
+                <span title="Has expertise in both, Backend & Frontend.">
+                  Full Stack Developer
+                </span>
+                <span title="Mastered React.js by building initutive & dynamic UIs">
+                  React Artisan
+                </span>
+                <span title="Worked for Zepto.ai & Replayable.io as an Electron Developer, for their cross-platform Desktop Applications">
+                  Electron Craftsman
+                </span>
+              </ChangingLetters>
+            </h1>
+            <p className="ml-1 text-sm my-4 opacity-60">
               5+ years of experience. Specialized in UX, SPAs, SSR, SaaS,
               Desktop Applications and Backend Infrastructures.
+            </p>
+
+            <p className="text-sm">
+              <Link href="#">My Work</Link>
             </p>
           </div>
         </div>
