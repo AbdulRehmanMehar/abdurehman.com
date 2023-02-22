@@ -43,7 +43,7 @@ export default function IntroHeader() {
       />
 
       <div className="mx-20 md:mx-10 sm:mx-4">
-        <div className="flex justify-center flex-col md:min-h-[500px] lg:mx-28">
+        <div className="flex justify-center flex-col min-h-[500px] sm:min-h-0 lg:mx-28">
           <div className="w-1/3 md:w-1/3 sm:w-full">
             <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
             <h1 className="block text-2xl font-bold text-primary w-max border-r-8 outline-offset-2">
