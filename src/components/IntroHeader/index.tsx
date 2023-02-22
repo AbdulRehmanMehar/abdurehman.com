@@ -25,22 +25,24 @@ export default function IntroHeader() {
           alt="Small Image of Abdul Rehman aka Software Engineer"
         />
       ) : (
-        <Image
-          priority
-          className="absolute top-2 right-0 sm:hidden md:-right-1/3 lg:-right-1/4"
-          height={670}
-          src={ForegroundImage}
-          title="Abdul Rehman"
-          alt="Image of Abdul Rehman aka Full Stack Developer"
-        />
+        <>
+          <Image
+            priority
+            className="absolute top-2 right-0 sm:hidden md:-right-1/3 lg:-right-1/4"
+            height={670}
+            src={ForegroundImage}
+            title="Abdul Rehman"
+            alt="Image of Abdul Rehman aka Full Stack Developer"
+          />
+          <Image
+            className="absolute left-0 opacity-[0.02] -z-10"
+            fill
+            style={{ objectFit: "cover" }}
+            src={LeftSide}
+            alt="Background Cover - abdurehman.com"
+          />
+        </>
       )}
-      <Image
-        className="absolute left-0 opacity-[0.02] -z-10"
-        fill
-        style={{ objectFit: "cover" }}
-        src={LeftSide}
-        alt="Background Cover - abdurehman.com"
-      />
 
       <div className="mx-20 md:mx-10 sm:mx-4">
         <div className="flex justify-center flex-col min-h-[500px] sm:min-h-0 lg:mx-28 xl:mx-28">
