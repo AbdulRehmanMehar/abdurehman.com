@@ -11,7 +11,7 @@ import { useWindowDimensions } from "@/helpers/hooks";
 
 export default function IntroHeader() {
   const { width } = useWindowDimensions();
-  const isSmallDevice = width < 768;
+  const isSmallDevice = width && width < 768;
 
   return (
     <div className="relative h-auto py-5 overflow-x-clip sm:pt-28">
@@ -43,7 +43,7 @@ export default function IntroHeader() {
       />
 
       <div className="mx-20 md:mx-10 sm:mx-4">
-        <div className="flex justify-center flex-col min-h-[500px] sm:min-h-0 lg:mx-28">
+        <div className="flex justify-center flex-col min-h-[500px] sm:min-h-0 lg:mx-28 xl:mx-28">
           <div className="w-1/3 md:w-1/3 sm:w-full">
             <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
             <h1 className="block text-2xl font-bold text-primary w-max border-r-8 outline-offset-2">
