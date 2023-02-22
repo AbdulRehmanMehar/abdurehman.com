@@ -1,34 +1,50 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ForegroundImage from "../../assets/images/myself_bg.png";
+import SmallForegroundImage from "../../assets/images/myself_sm.png";
 import WaterMark from "../../assets/images/watermark.png";
 import LeftSide from "../../assets/images/graph.png";
 import Link from "next/link";
 import ChangingLetters from "../Typography/ChangingLetters";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useWindowDimensions } from "@/helpers/hooks";
 
 export default function IntroHeader() {
+  const { width } = useWindowDimensions();
+  const isSmallDevice = width < 768;
+
   return (
-    <div className="relative">
+    <div className="relative h-auto py-5 overflow-x-clip sm:pt-28">
+      {isSmallDevice ? (
+        <Image
+          priority
+          className="rounded-full my-5 mx-4 w-28 h-28"
+          src={SmallForegroundImage}
+          style={{ objectFit: "cover" }}
+          title="Abdul Rehman"
+          alt="Small Image of Abdul Rehman aka Software Engineer"
+        />
+      ) : (
+        <Image
+          priority
+          className="absolute top-2 right-0 sm:hidden md:-right-1/3 lg:-right-1/4"
+          height={670}
+          src={ForegroundImage}
+          title="Abdul Rehman"
+          alt="Image of Abdul Rehman aka Full Stack Developer"
+        />
+      )}
       <Image
-        priority
-        className="absolute top-2 right-0"
-        height={670}
-        src={ForegroundImage}
-        alt="Abdul Rehman - Full Stack Developer"
-      />
-      <Image
-        priority
         className="absolute left-0 opacity-[0.02] -z-10"
         fill
         style={{ objectFit: "cover" }}
         src={LeftSide}
-        alt="Abdul Rehman - Full Stack Developer"
+        alt="Background Cover - abdurehman.com"
       />
 
-      <div className="mx-20">
-        <div className="flex justify-center flex-col min-h-[500px] mx-28">
-          <div className="lg:w-1/3 md:w-1/3">
+      <div className="mx-20 md:mx-10 sm:mx-4">
+        <div className="flex justify-center flex-col md:min-h-[500px] lg:mx-28">
+          <div className="w-1/3 md:w-1/3 sm:w-full">
             <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
             <h1 className="block text-2xl font-bold text-primary w-max border-r-8 outline-offset-2">
               <ChangingLetters className="pr-4">
@@ -50,8 +66,8 @@ export default function IntroHeader() {
               </ChangingLetters>
             </h1>
             <p className="ml-1 text-sm my-4 opacity-60">
-              5+ years of experience. Specialized in UX, SPAs, SSR, SaaS,
-              Desktop Applications and Backend Infrastructures.
+              Specialized in UX, SPAs, SSR, SaaS, Desktop Applications and
+              Backend Infrastructures.
             </p>
 
             <p className="text-sm ml-1 mt-6">
