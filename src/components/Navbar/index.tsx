@@ -16,7 +16,7 @@ export default function Navbar() {
           />
         </Link>
         <ul className="mx-4 border-l-2 px-6 inline-block">
-          <li>
+          <li className="inline-block">
             <Link
               className="mx-3 opacity-75 text-sm border-b-2 border-transparent duration-500 hover:border-red-300 hover:opacity-100"
               href="#"
@@ -24,7 +24,7 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li>
+          <li className="inline-block">
             <Link
               className="mx-3 opacity-75 text-sm border-b-2 border-transparent duration-500 hover:border-red-300 hover:opacity-100"
               href="#"

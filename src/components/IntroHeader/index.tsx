@@ -29,7 +29,7 @@ export default function IntroHeader() {
       <div className="mx-20">
         <div className="flex justify-center flex-col min-h-[500px] mx-28">
           <div className="lg:w-1/3 md:w-1/3">
-            <p className="ml-1 text-sm block">Hello! I am Abdul Rehman, a</p>
+            <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
             <h1 className="block text-2xl font-bold text-primary w-max border-r-8 outline-offset-2">
               <ChangingLetters className="pr-4">
                 <span title="Developing scalable softwares for years.">
