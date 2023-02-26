@@ -27,7 +27,7 @@ export default function IntroHeader() {
 
   return (
     <div className="relative h-auto py-5 overflow-x-clip sm:pt-28">
-      <div className="min-h-[8.25rem]">
+      <div className="sm:min-h-[8.25rem]">
         {isSmallDevice ? (
           <Image
             priority
