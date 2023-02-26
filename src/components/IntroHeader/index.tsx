@@ -95,15 +95,15 @@ export default function IntroHeader() {
             </p>
             <div
               title="Tech Stacks I've worked on"
-              className="absolute bottom-14"
+              className="absolute bottom-10 sm:relative sm:mt-20"
             >
               <div>
                 <ChangingLetters className="mr-1" delay={3000}>
                   <span title="MongoDb">
-                    <MongodbOriginal className="inline-block mx-1" size={40} />
+                    <MongodbOriginal className="inline-block" size={40} />
                   </span>
                   <span title="MySQL">
-                    <MysqlOriginal className="inline-block mx-1" size={40} />
+                    <MysqlOriginal className="inline-block" size={40} />
                   </span>
                   <span title="PostgreSQL">
                     <PostgresqlOriginal
