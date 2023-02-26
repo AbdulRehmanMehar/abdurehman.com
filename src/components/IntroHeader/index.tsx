@@ -106,10 +106,7 @@ export default function IntroHeader() {
                     <MysqlOriginal className="inline-block" size={40} />
                   </span>
                   <span title="PostgreSQL">
-                    <PostgresqlOriginal
-                      className="inline-block mx-1"
-                      size={40}
-                    />
+                    <PostgresqlOriginal className="inline-block" size={40} />
                   </span>
                 </ChangingLetters>
                 <span title="Express.Js">
