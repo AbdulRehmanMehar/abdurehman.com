@@ -8,6 +8,18 @@ import Link from "next/link";
 import ChangingLetters from "../Typography/ChangingLetters";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useWindowDimensions } from "@/helpers/hooks";
+import {
+  NextjsOriginalWordmark,
+  ReactOriginal,
+  NodejsPlain,
+  ElectronOriginal,
+  PostgresqlOriginal,
+  MongodbOriginal,
+  MysqlOriginal,
+  VuejsOriginal,
+  NextjsOriginal,
+  ExpressOriginal,
+} from "devicons-react";
 
 export default function IntroHeader() {
   const { width } = useWindowDimensions();
@@ -44,7 +56,7 @@ export default function IntroHeader() {
         </>
       )}
 
-      <div className="mx-20 md:mx-10 sm:mx-4">
+      <div className="mx-20 md:mx-10 sm:mx-4 relative">
         <div className="flex justify-center flex-col min-h-[500px] sm:min-h-0 lg:mx-28 xl:mx-28">
           <div className="w-1/3 md:w-1/3 sm:w-full">
             <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
@@ -81,6 +93,44 @@ export default function IntroHeader() {
                 <span>My Work</span>
               </Link>
             </p>
+            <div
+              title="Tech Stacks I've worked on"
+              className="absolute bottom-14"
+            >
+              <div>
+                <ChangingLetters className="mr-1" delay={3000}>
+                  <span title="MongoDb">
+                    <MongodbOriginal className="inline-block mx-1" size={40} />
+                  </span>
+                  <span title="MySQL">
+                    <MysqlOriginal className="inline-block mx-1" size={40} />
+                  </span>
+                  <span title="PostgreSQL">
+                    <PostgresqlOriginal
+                      className="inline-block mx-1"
+                      size={40}
+                    />
+                  </span>
+                </ChangingLetters>
+                <span title="Express.Js">
+                  <ExpressOriginal className="inline-block mx-1" size={40} />
+                </span>
+                <ChangingLetters delay={1000}>
+                  <span title="React.Js">
+                    <ReactOriginal className="inline-block mx-1" size={40} />
+                  </span>
+                  <span title="Vue.Js">
+                    <VuejsOriginal className="inline-block mx-1" size={40} />
+                  </span>
+                  <span>
+                    <NextjsOriginal className="inline-block mx-1" size={40} />
+                  </span>
+                </ChangingLetters>
+                <span title="Node.Js">
+                  <NodejsPlain className="inline-block ml-1" size={40} />
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
