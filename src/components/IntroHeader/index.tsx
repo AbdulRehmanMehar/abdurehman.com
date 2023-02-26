@@ -27,11 +27,11 @@ export default function IntroHeader() {
 
   return (
     <div className="relative h-auto py-5 overflow-x-clip sm:pt-28">
-      <div className="sm:min-h-[8.25rem]">
+      <div className="sm:min-h-[8.25rem] sm:py-5">
         {isSmallDevice ? (
           <Image
             priority
-            className="rounded-full my-5 mx-4 w-28 h-28"
+            className="rounded-full mx-4 w-28 h-28"
             src={SmallForegroundImage}
             style={{ objectFit: "cover" }}
             title="Abdul Rehman"
