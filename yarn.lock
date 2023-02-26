@@ -634,6 +634,11 @@ detective@^5.2.1:
     defined "^1.0.0"
     minimist "^1.2.6"
 
+devicons-react@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/devicons-react/-/devicons-react-1.2.5.tgz#45048d1193cf475b6d04fccb39aa7cc208506edd"
+  integrity sha512-osy4eh8SsSUh5FOA/Ibng+KM1jJ9ibV5R/mK/A4pHgJiCIXFQz6OBcVEBzQnlg9j5PxhK5Az8Y3UYzGMk3UDbQ==
+
 didyoumean@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/didyoumean/-/didyoumean-1.2.2.tgz#989346ffe9e839b4555ecf5666edea0d3e8ad037"
