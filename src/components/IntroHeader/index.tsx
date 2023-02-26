@@ -95,7 +95,7 @@ export default function IntroHeader() {
             </p>
             <div
               title="Tech Stacks I've worked on"
-              className="absolute bottom-10 sm:relative sm:mt-20"
+              className="absolute bottom-10 sm:relative sm:mt-32"
             >
               <div>
                 <ChangingLetters className="mr-1" delay={3000}>
