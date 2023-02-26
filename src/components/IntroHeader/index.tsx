@@ -27,39 +27,42 @@ export default function IntroHeader() {
 
   return (
     <div className="relative h-auto py-5 overflow-x-clip sm:pt-28">
-      {isSmallDevice ? (
-        <Image
-          priority
-          className="rounded-full my-5 mx-4 w-28 h-28"
-          src={SmallForegroundImage}
-          style={{ objectFit: "cover" }}
-          title="Abdul Rehman"
-          alt="Small Image of Abdul Rehman aka Software Engineer"
-        />
-      ) : (
-        <>
+      <div className="min-h-[8.25rem]">
+        {isSmallDevice ? (
           <Image
             priority
-            className="absolute top-2 right-0 sm:hidden md:-right-1/3 lg:-right-1/4"
-            height={670}
-            src={ForegroundImage}
-            title="Abdul Rehman"
-            alt="Image of Abdul Rehman aka Full Stack Developer"
-          />
-          <Image
-            className="absolute left-0 opacity-[0.02] -z-10"
-            fill
+            className="rounded-full my-5 mx-4 w-28 h-28"
+            src={SmallForegroundImage}
             style={{ objectFit: "cover" }}
-            src={LeftSide}
-            alt="Background Cover - abdurehman.com"
+            title="Abdul Rehman"
+            alt="Small Image of Abdul Rehman aka Software Engineer"
           />
-        </>
-      )}
-
+        ) : (
+          <>
+            <Image
+              priority
+              className="absolute top-2 right-0 sm:hidden md:-right-1/3 lg:-right-1/4"
+              height={670}
+              src={ForegroundImage}
+              title="Abdul Rehman"
+              alt="Image of Abdul Rehman aka Full Stack Developer"
+            />
+            <Image
+              className="absolute left-0 opacity-[0.02] -z-10"
+              fill
+              style={{ objectFit: "cover" }}
+              src={LeftSide}
+              alt="Background Cover - abdurehman.com"
+            />
+          </>
+        )}
+      </div>
       <div className="mx-20 md:mx-10 sm:mx-4 relative">
         <div className="flex justify-center flex-col min-h-[500px] sm:min-h-0 lg:mx-28 xl:mx-28">
           <div className="w-1/3 md:w-1/3 sm:w-full">
-            <p className="ml-1 text-sm block">Hello! I am Abdul Rehman</p>
+            <p className="ml-1 text-sm block sm:ml-0">
+              Hello! I am Abdul Rehman
+            </p>
             <h1 className="block text-2xl font-bold text-primary w-max border-r-8 outline-offset-2">
               <ChangingLetters className="pr-4">
                 <span title="Developing scalable softwares for years.">
@@ -79,12 +82,12 @@ export default function IntroHeader() {
                 </span>
               </ChangingLetters>
             </h1>
-            <p className="ml-1 text-sm my-4 opacity-60">
+            <p className="ml-1 text-sm my-4 opacity-60 sm:ml-0">
               Specialized in UX, SPAs, SSR, SaaS, Desktop Applications and
               Backend Infrastructures.
             </p>
 
-            <p className="text-sm ml-1 mt-6">
+            <p className="text-sm ml-1 mt-6 sm:ml-0">
               <Link className="underline-offset-8 underline" href="#">
                 <FontAwesomeIcon
                   className="text-sm mr-2 animate-bounce"
