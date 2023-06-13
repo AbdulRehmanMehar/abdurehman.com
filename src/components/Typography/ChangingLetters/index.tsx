@@ -3,7 +3,6 @@ import React, {
   cloneElement,
   JSXElementConstructor,
   ReactElement,
-  ReactNode,
 } from "react";
 
 interface ChaningLettersProps {
@@ -22,7 +21,9 @@ export default function ChaningLetters(props: ChaningLettersProps) {
         index === activeIndex
           ? cloneElement(child, {
               ...child.props,
-              className: (child.props.className || "") + ` ${className}`,
+              className:
+                (child.props.className || "") +
+                ` ${className} animate-in fade-in duration-1000`,
             })
           : null
       )}

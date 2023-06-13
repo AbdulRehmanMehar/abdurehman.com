@@ -2,17 +2,14 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ForegroundImage from "../../assets/images/myself_bg.png";
 import SmallForegroundImage from "../../assets/images/myself_sm.png";
-import WaterMark from "../../assets/images/watermark.png";
 import LeftSide from "../../assets/images/graph.png";
 import Link from "next/link";
 import ChangingLetters from "../Typography/ChangingLetters";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useWindowDimensions } from "@/helpers/hooks";
 import {
-  NextjsOriginalWordmark,
   ReactOriginal,
   NodejsPlain,
-  ElectronOriginal,
   PostgresqlOriginal,
   MongodbOriginal,
   MysqlOriginal,
@@ -26,7 +23,7 @@ export default function IntroHeader() {
   const isSmallDevice = width && width < 768;
 
   return (
-    <div className="relative h-auto py-5 overflow-x-clip sm:pt-28">
+    <div className="relative mb-28 h-auto py-5 overflow-x-clip sm:pt-28">
       <div className="sm:min-h-[8.25rem] sm:py-5">
         {isSmallDevice ? (
           <Image
@@ -96,6 +93,7 @@ export default function IntroHeader() {
                 <span>My Work</span>
               </Link>
             </p>
+
             <div
               title="Tech Stacks I've worked on"
               className="absolute bottom-10 sm:relative sm:mt-32"
