@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  experimental: "all",
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -8,6 +9,16 @@ module.exports = {
         primary: "#e05751",
         secondary: "#ef852b",
         "primary-dark": "#8b2a10",
+
+        black: "#222222",
+        white: "#FFFFFF",
+        purple: "#4B4E6D",
+        yellow: "#FCAF58",
+        red: "#D90368",
+
+        "gray-ish": "#95A3B3",
+        "faded-white": "#F8F8F8",
+        "light-black": "#545454",
       },
       screens: {
         sm: { min: "100px", max: "767px" },
