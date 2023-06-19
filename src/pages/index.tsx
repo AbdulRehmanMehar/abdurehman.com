@@ -72,12 +72,12 @@ export default function Home() {
             </small>
             MERN Stack Developer
           </h1>
-          <p className="text-light-black my-5 text-base sm:text-sm">
+          <p className="text-light-black my-5 text-base sm:text-sm sm:my-3">
             By combining cutting-edge technologies, seamless integrations, and
             clean code practices, I create powerful and scalable solutions
             tailored to your specific needs.
           </p>
-          <p className="flex flex-row gap-5 my-2">
+          <p className="flex flex-row gap-5 my-2 sm:my-0 sm:gap-2">
             <Button variant="primary">Book a Call</Button>
             <Button variant="secondary">Learn More</Button>
           </p>
