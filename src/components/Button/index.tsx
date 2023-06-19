@@ -14,10 +14,8 @@ export type ButtonProps = {
 };
 
 const variants = {
-  primary:
-    "bg-purple hover:bg-faded-white hover:text-purple hover:border-purple",
-  secondary:
-    "bg-yellow hover:bg-faded-white hover:text-yellow hover:border-yellow",
+  primary: "bg-purple hover:bg-white hover:text-purple hover:border-purple",
+  secondary: "bg-yellow hover:bg-white hover:text-yellow hover:border-yellow",
 };
 
 const Button: React.FC<ButtonProps> = ({
