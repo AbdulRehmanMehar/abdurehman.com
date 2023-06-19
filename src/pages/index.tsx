@@ -63,7 +63,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-row justify-between min-h-full relative sm:flex-col-reverse sm:pt-16 sm:justify-end sm:gap-2 md:flex-col-reverse md:pt-16 md:justify-end md:gap-5 sm:h-auto md:h-auto">
         <div className="flex flex-col justify-center">
-          <p className="text-light-black mb-5 text-xs font-light">
+          <p className="text-light-black mb-3 text-xs font-light">
             Transforming Ideas into Exceptional Web Experiences - Meet
           </p>
           <h1 className="text-black text-3xl sm:text-2xl">
@@ -72,12 +72,12 @@ export default function Home() {
             </small>
             MERN Stack Developer
           </h1>
-          <p className="text-light-black my-5 text-base sm:text-sm sm:my-3">
+          <p className="text-light-black my-3 text-base sm:text-sm sm:my-3">
             By combining cutting-edge technologies, seamless integrations, and
             clean code practices, I create powerful and scalable solutions
             tailored to your specific needs.
           </p>
-          <p className="flex flex-row gap-5 my-2 sm:my-0 sm:gap-2">
+          <p className="flex flex-row gap-3 sm:my-0 sm:gap-2">
             <Button variant="primary">Book a Call</Button>
             <Button variant="secondary">Learn More</Button>
           </p>
