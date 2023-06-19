@@ -77,7 +77,7 @@ export default function Home() {
             clean code practices, I create powerful and scalable solutions
             tailored to your specific needs.
           </p>
-          <p className="flex flex-row gap-3 sm:my-0 sm:gap-2">
+          <p className="flex flex-row gap-3 my-2 sm:gap-2">
             <Button variant="primary">Book a Call</Button>
             <Button variant="secondary">Learn More</Button>
           </p>
