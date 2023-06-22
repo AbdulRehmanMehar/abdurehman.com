@@ -7,6 +7,10 @@ import NavLink from "@/components/NavLink";
 import { Poppins } from "@next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import HeaderImage from "@/assets/images/headerLogo.png";
+import Button from "@/components/Button";
+import { CalendarDaysIcon } from "@heroicons/react/24/solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 
 const popins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -55,6 +59,43 @@ export default function App({ Component, pageProps }: AppProps) {
                 {name}
               </NavLink>
             ))}
+          </>
+        }
+        secondaryLinks={
+          <>
+            <div className="flex flex-row gap-3 items-center">
+              <Button
+                href="https://github.com/AbdulRehmanMehar"
+                variant="secondary"
+                target="_blank"
+                size="small"
+                title="GitHub"
+                className="h-7 w-7 p-[5px] rounded-full flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faGithubAlt} />
+              </Button>
+              <Button
+                href="https://www.linkedin.com/in/mehar6925"
+                variant="secondary"
+                target="_blank"
+                size="small"
+                title="LinkedIn"
+                className="h-7 w-7 p-[5px] rounded-full flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </Button>
+            </div>
+
+            <div className="w-[1px] h-[30px] bg-light-black opacity-40"></div>
+
+            <Button
+              variant="primary"
+              size="small"
+              className="flex flex-row items-center"
+            >
+              <CalendarDaysIcon className="h-5 w-5 mr-2 -mt-1" />
+              <p className="">Book a Call</p>
+            </Button>
           </>
         }
       />

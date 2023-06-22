@@ -9,6 +9,7 @@ import heroImage from "@/assets/images/HeroImage.svg";
 
 import NavLink from "@/components/NavLink";
 import Button from "@/components/Button";
+import { CalendarDaysIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,8 +63,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="flex flex-row justify-between min-h-full relative sm:flex-col-reverse sm:pt-16 sm:justify-end sm:gap-2 md:flex-col-reverse md:pt-16 md:justify-end md:gap-5 sm:h-auto md:h-auto">
-        <div className="flex flex-col justify-center">
-          <p className="text-light-black mb-3 text-xs font-light">
+        <div className="flex flex-col justify-center relative">
+          <p className="text-light-black mb-3 text-xs font-light leading-5">
             Transforming Ideas into Exceptional Web Experiences - Meet
           </p>
           <h1 className="text-black text-3xl sm:text-2xl">
@@ -72,15 +73,30 @@ export default function Home() {
             </small>
             MERN Stack Developer
           </h1>
-          <p className="text-light-black my-3 text-base sm:text-sm sm:my-3">
-            By combining cutting-edge technologies, seamless integrations, and
+          <p className="text-light-black my-3 text-base sm:text-sm sm:my-3 leading-7">
+            {/* By combining cutting-edge technologies, seamless integrations, and
             clean code practices, I create powerful and scalable solutions
-            tailored to your specific needs.
+            tailored to your specific needs. */}
+            I specialize in architecting robust and scalable applications that
+            drive business growth. Let&apos;s collaborate to unlock the true
+            potential of your business and elevate your digital presence.
           </p>
           <p className="flex flex-row gap-3 my-2 sm:gap-2">
-            <Button variant="primary">Book a Call</Button>
-            <Button variant="secondary">Learn More</Button>
+            <Button variant="primary" className="flex flex-row items-center">
+              <CalendarDaysIcon className="h-5 w-5 mr-2" />
+              <p className="lg:mt-[3px]">Book a Call</p>
+            </Button>
+            <Button variant="secondary" className="flex flex-row items-center">
+              <CodeBracketIcon className="h-5 w-5 mr-2" />
+              <p className="lg:mt-[3px]">See my Work</p>
+            </Button>
           </p>
+
+          {/* <div className="my-5">
+            <p className="relative flex items-center gap-1 text-xs text-light-black before:block before:content-[' '] before:w-10 before:h-[1px] before:bg-light-black before:inline-block after:content-[' '] after:block after:w-10 after:h-[1px] after:bg-light-black">
+              Social Handles
+            </p>
+          </div> */}
         </div>
         <div className="relative min-h-full min-w-[50%] sm:w-full sm:h-[400px] md:h-[600px] md:w-full">
           <Image
@@ -91,6 +107,7 @@ export default function Home() {
           ></Image>
         </div>
       </section>
+      <section className="h-screen"></section>
     </>
   );
 }

@@ -21,7 +21,7 @@ const NavLink: React.FC<NavLinkProps> = ({
       href={href}
       onClick={onClick}
       className={twMerge(
-        "inline-block text-light-black relative text-[12px] after:content-[''] after:absolute after:-bottom-[2px] after:left-0 after:w-0 after:h-[1px] after:transition-all hover:after:bg-light-black hover:after:w-1/2 active:text-black active:after:bg-black",
+        "inline-block text-light-black relative text-sm after:content-[''] after:absolute after:-bottom-[2px] after:left-0 after:w-0 after:h-[1px] after:transition-all hover:after:bg-light-black hover:after:w-1/2 active:text-black active:after:bg-black",
         className,
         isActive && "text-black after:bg-black after:w-1/2"
       )}
