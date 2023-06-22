@@ -81,12 +81,18 @@ export default function Home() {
             drive business growth. Let&apos;s collaborate to unlock the true
             potential of your business and elevate your digital presence.
           </p>
-          <p className="flex flex-row gap-3 my-2 sm:gap-2">
-            <Button variant="primary" className="flex flex-row items-center">
+          <p className="flex flex-row gap-3 my-2 sm:gap-2 sm:flex-col">
+            <Button
+              variant="primary"
+              className="flex flex-row items-center justify-center"
+            >
               <CalendarDaysIcon className="h-5 w-5 mr-2" />
               <p className="lg:mt-[3px]">Book a Call</p>
             </Button>
-            <Button variant="secondary" className="flex flex-row items-center">
+            <Button
+              variant="secondary"
+              className="flex flex-row items-center justify-center"
+            >
               <CodeBracketIcon className="h-5 w-5 mr-2" />
               <p className="lg:mt-[3px]">See my Work</p>
             </Button>

@@ -61,33 +61,32 @@ export default function App({ Component, pageProps }: AppProps) {
             ))}
           </>
         }
-        secondaryLinks={
+        socialProfiles={
           <>
-            <div className="flex flex-row gap-3 items-center">
-              <Button
-                href="https://github.com/AbdulRehmanMehar"
-                variant="secondary"
-                target="_blank"
-                size="small"
-                title="GitHub"
-                className="h-7 w-7 p-[5px] rounded-full flex justify-center items-center"
-              >
-                <FontAwesomeIcon icon={faGithubAlt} />
-              </Button>
-              <Button
-                href="https://www.linkedin.com/in/mehar6925"
-                variant="secondary"
-                target="_blank"
-                size="small"
-                title="LinkedIn"
-                className="h-7 w-7 p-[5px] rounded-full flex justify-center items-center"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </Button>
-            </div>
-
-            <div className="w-[1px] h-[30px] bg-light-black opacity-40"></div>
-
+            <Button
+              href="https://github.com/AbdulRehmanMehar"
+              variant="secondary"
+              target="_blank"
+              size="small"
+              title="GitHub"
+              className="h-7 w-7 p-[5px] rounded-full flex justify-center items-center"
+            >
+              <FontAwesomeIcon icon={faGithubAlt} />
+            </Button>
+            <Button
+              href="https://www.linkedin.com/in/mehar6925"
+              variant="secondary"
+              target="_blank"
+              size="small"
+              title="LinkedIn"
+              className="h-7 w-7 p-[5px] rounded-full flex justify-center items-center"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </Button>
+          </>
+        }
+        callToAction={
+          <>
             <Button
               variant="primary"
               size="small"
